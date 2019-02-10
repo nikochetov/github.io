@@ -41,8 +41,8 @@
 }
 @media (max-width: 480px) {
 	body, .search_form, .wrap_item, .wrap_item .item, 
-	.s2_item, .s2_header:before, .s2_header:after, .search_form,
-	.item_text p, .item_bottom {
+	.s2_item, .s2_header:before, .s2_header:after, 
+	.search_form, .item_text p, .item_bottom {
 		width: 100%
 	}
 	.wrapper {
@@ -57,6 +57,10 @@
 	}
 	.banner .text2 {
 		font: 1em verdana, sans-serif;
+	}
+	.banner form {
+		bottom: 40px;
+		left: 20px;
 	}
 	.logo, .topnav, .s1, .s2, .s3, footer {
 		width: 90%;
@@ -80,8 +84,8 @@
 	.s2_header:after {
 		bottom: -1px;
 	}
-	.s2_header_search div {
-		border: 1px solid red;
+	.s2_header_search div img {
+		display: block;
 	}
 	.s2 > .s2_item:nth-child(3) {
 		display: none;
