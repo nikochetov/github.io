@@ -43,8 +43,15 @@
 }
 @media (max-width: 480px) {
 	.banner {
-		height: auto;
+		height: 300px;
+		border-radius: 0;
 	}
+	.banner .text1 {
+		font:  2em segoe print, sans-serif;
+}
+	.banner .text2 {
+		font: 1em verdana, sans-serif;
+}
 	.s1, .s2, .s3, footer {
 		width: 90%;
 		margin-left: 5%;
@@ -74,6 +81,11 @@
 		width: 100%
 	}
 	.search_form {
-	width: 22vw;
-	}	
+		width: 100%;
+	}
+	.search{
+		width: 85%;
+		border:  1px solid #E5E5E5;
+		padding-left: 15px;
+}
 }
