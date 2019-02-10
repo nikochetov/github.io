@@ -183,13 +183,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 1px solid aqua;
 }
 .s2_item {
 	width: 22vw;
 	height: 100%;
 	margin-top: 30px;
-	border: 1px solid red;
 }
 .s2_header {
 	font: .8em verdana, sans-serif;
