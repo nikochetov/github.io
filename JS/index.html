@@ -12,11 +12,10 @@
 			border-radius: 5px;
 			margin: 10px auto;
 		}
-		p {
+		p, p input, input[type="text"]:focus, ::-webkit-input-placeholder {
 			text-align: center;
 		}
 		p input, input[type="text"]:focus {
-			text-align: center;			
 			box-sizing: border-box;
 		}
 		p input {
@@ -27,13 +26,16 @@
 			border-radius: 5px;
 		}
 		::-webkit-input-placeholder {
-			text-align: center;			
 			color: red;
 			font-size: 14px;
 		}
 		:focus::-webkit-input-placeholder {
 			color: transparent;
 			padding-left: 20px;
+		}
+		input[type="text"] {
+  			color: #000000;
+  			font-size: 20px;		
 		}
 		input[type="text"]:focus {
   			color: #000000;
@@ -60,21 +62,18 @@
 		}
 		.btns > button:focus {
 			background: linear-gradient(to bottom, #B7AE20, #EADE78);
-			border: none;
 			box-shadow: 1px 5px 20px -5px blue;
 		}
-		.btns button .divd {
+		.btns button > .divd, .mns {
 			font-size: 20px;
 		}
-		.btns button .mns {
-			font-size: 20px;
-		}
+
 	</style>
 </head>
 <body>
 	<div class="calc_wrap">
-		<p><input type="text" id="n1" onkeyup="return noSymbol(this);" onchange="return noSymbol(this);" placeholder="Число 1"></p>
-		<p><input type="text" id="n2" onkeyup="return noSymbol(this);" onchange="return noSymbol(this);" placeholder="Число 2"></p>	
+		<p><input type="text" id="n1" autocomplete="off" onkeyup="return noSymbol(this);" onchange="return noSymbol(this);" placeholder="Число 1"></p>
+		<p><input type="text" id="n2" autocomplete="off" onkeyup="return noSymbol(this);" onchange="return noSymbol(this);" placeholder="Число 2"></p>	
 		<div class="btns">
 			<button onclick="plus()">&#10010;</button>
 			<button onclick="minus()"><span class="mns">&ndash;</span></button>

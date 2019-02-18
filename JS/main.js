@@ -143,23 +143,27 @@ function noSymbol(input) {
 };
 function plus() {
 	var num1 = document.getElementById('n1').value;
+	num1 = parseInt(num1);
 	var num2 = document.getElementById('n2').value;
-	var res = num1 + num2;	
+	num2 = parseInt(num2);
+	var res = num1 + num2;
 	document.getElementById('result').value = res;
-}function minus() {
+};
+function minus() {
 	var num1 = document.getElementById('n1').value;
 	var num2 = document.getElementById('n2').value;
 	var res = num1 - num2;	
 	document.getElementById('result').value = res;
-}function multiply() {
+};
+function multiply() {
 	var num1 = document.getElementById('n1').value;
 	var num2 = document.getElementById('n2').value;
 	var res = num1 * num2;	
 	document.getElementById('result').value = res;
-}function divide() {
+};
+function divide() {
 	var num1 = document.getElementById('n1').value;
 	var num2 = document.getElementById('n2').value;
 	var res = num1 / num2;	
 	document.getElementById('result').value = res;
-}
-
+};
