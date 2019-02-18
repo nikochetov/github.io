@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<script src="main.js"></script>
+	<style>
+		.calc_wrap {
+			width: 200px;
+			height: 250px;
+			border: 2px solid black;
+			border-radius: 5px;
+			margin: 10px auto;
+		}
+		p {
+			text-align: center;
+		}
+		p input, input[type="text"]:focus {
+			text-align: center;			
+			box-sizing: border-box;
+		}
+		p input {
+			width: 190px;
+			height: 40px;
+			box-shadow: 1px 5px 10px -5px black;
+			border: 1px solid #FE0F0F;
+			border-radius: 5px;
+		}
+		::-webkit-input-placeholder {
+			text-align: center;			
+			color: red;
+			font-size: 14px;
+		}
+		:focus::-webkit-input-placeholder {
+			color: transparent;
+			padding-left: 20px;
+		}
+		input[type="text"]:focus {
+  			color: #000000;
+  			font-size: 20px;		
+		}
+		.btns {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-around;
+			text-align: center;
+		}
+		.btns > button {
+			width: 45px;
+			height: 45px;
+			position: relative;
+			border-radius: 5px;
+			background: linear-gradient(to bottom, #464415, #B7AE20, #EADE78, #B7AE20);
+			color: #CA0808;
+			box-shadow: 1px 5px 5px -5px black;
+			border: none;
+		}
+		.btns > button:focus {
+			background: linear-gradient(to bottom, #B7AE20, #EADE78);
+			border: none;
+			box-shadow: 1px 5px 20px -5px blue;
+		}
+		.btns button .divd {
+			font-size: 20px;
+		}
+		.btns button .mns {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="calc_wrap">
+		<p><input type="text" id="n1" onkeyup="return noSymbol(this);" onchange="return noSymbol(this);" placeholder="Число 1"></p>
+		<p><input type="text" id="n2" placeholder="Число 2"></p>	
+		<div class="btns">
+			<button onclick="plus()">&#10010;</button>
+			<button onclick="minus()"><span class="mns">&ndash;</span></button>
+			<button onclick="multiply()">&#10006;</button>
+			<button onclick="divide()"><span class="divd">&divide;</span></button>
+		</div>	
+		<p><input type="text" readonly id="result" placeholder="Результат"></p>		
+	</div>
+</body>
+</html>
