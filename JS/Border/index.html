@@ -4,22 +4,79 @@
 	<meta charset="UTF-8">
 	<title>Border radius</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js" defer></script>
+	<script src="js/border.js" defer></script>
+	<script src="js/shadow.js" defer></script>
 </head>
 <body>
-	<div class="wrap">
-		<div class="wrapRange">
-			<p>Top Left: <input type="range" value='0' name="Border_Radius" class="b-radius"></p>	
-			<p>Top Right: <input type="range" value='0' name="Border_Radius" class="b-radius"></p>	
-			<p>Bottom Right: <input type="range" value='0' name="Border_Radius" class="b-radius"></p>	
-			<p>Bottom Left: <input type="range" value='0' name="Border_Radius" class="b-radius"></p>	
-			<p>Border Radius <input type="range" value='0' name="Border_Radius" class="allRadius"></p>	
-		</div>
-		<button class="reset">Reset</button>
+	
+	<div class='wrap'>
+		<div class="wrap_range">
 			
-		<div id="box"></div>
+			<div class="range_items">
+				<p>Top Left: 
+					<input type="range" value='0' name="Border_Radius" class="b-radius">
+					<input type="number" value='0' min="0" max="100" name="borderNum" class="b-tl">
+				</p>	
+				
+				<p>Top Right: 
+					<input type="range" value='0' name="Border_Radius" class="b-radius">
+					<input type="number" value='0' min="0" max="100" name="borderNum" class="b-tr">
+				</p>	
+				
+				<p>Bottom Right: 
+					<input type="range" value='0' name="Border_Radius" class="b-radius">
+					<input type="number" value='0' min="0" max="100" name="borderNum" class="b-br">
+				</p>	
+				
+				<p>Bottom Left: 
+					<input type="range" value='0' name="Border_Radius" class="b-radius">
+					<input type="number" value='0' min="0" max="100" name="borderNum" class="b-bl">
+				</p>	
+				
+				<p>Border Radius:
+					<input type="range" value='0' name="Border_Radius" class="allRadius">
+					<input type="number" value='0' min="0" max="100" name="allBorderNum" class="num-br">
+				</p>	
+			</div>		
+			
+			<div class="range_items">
+				<p>Horizontal: 
+					<input type="range" min='-100' value='0' max='100' class="horisontal" name='rangeShadow'>
+					<input type="number" min='-100' value='0' max='100' class="horisontalN" name='numberShadow'>
+				</p>
 					
-		<textarea name="bradius" class="b_textarea"></textarea>
+				<p>Vertical: 
+					<input type="range" min='-100' value='0' max='100' class="vertical" name='rangeShadow'>
+					<input type="number" min='-100' value='0' max='100' class="verticalN" name='numberShadow'>
+				</p>	
+						
+				<p>Blur: 
+					<input type="range" value='0' max='100' class="blur" name='rangeShadow'>	
+					<input type="number" min='0' value='0' max='100' class="blurN" name='numberShadow'>
+				</p>
+					
+				<p>Spread:  
+					<input type="range" min='-100' value='0' max='100' class="spread" name='rangeShadow'>
+					<input type="number" min='-100' value='0' max='100' class="spreadN" name='numberShadow'>
+				</p>		
+				<p id="inset"> Inset
+					<input type="checkbox" name="inset" class="ins"></p>	
+			</div>
+		</div>
+		
+		<div class='btns'>
+			<button class="reset_b">Reset Radius</button>
+			<button class="reset_sh">Reset Shadow</button>
+		</div>
+		
+		<div id="box"></div>
+		
+		<div class="ta">
+			<p class="textArea"></p>
+			<p class="codeOut"></p>
+		</div>
+	
 	</div>
+
 </body>
 </html>
