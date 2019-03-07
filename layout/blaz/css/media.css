@@ -1,0 +1,235 @@
+.topnav [type="checkbox"] {
+	display: none;
+}
+.topnav label.togglemenu {
+	background: none;
+	display: none;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	width: 15%;
+	transition: all 1s ease;
+
+}
+.topnav label.togglemenu .fa {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	font-size: 18px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+	.wrapper {
+		width: 100%;
+	}
+	.wrap_item .item, .s2_item {
+		min-width: 300px;
+	}
+}
+@media (max-width: 1120px) {
+	.wrap_item .item, .s2_item {
+		width: 28vw;
+		height: 19vw;
+	}
+}
+@media (max-width: 950px) {
+	.wrap_item .item, {
+		width: 31vw;
+		height: 20vw;
+		min-width: 230px;
+		min-height: 150px;
+	}
+	.s2_item {
+		width: 31vw;
+		height: auto;
+		overflow: auto;
+		min-width: 230px;
+
+	}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+	body, .s2_header:before, .s2_header:after {
+		width: 100%
+	}
+	.wrapper {
+		margin-top: 5px;
+	}
+	.banner {
+		height: 350px;
+		border-radius: 0;
+	}
+	.banner .text1 {
+		font:  2em segoe print, sans-serif;
+	}
+	.banner .text2 {
+		font: 1em verdana, sans-serif;
+	}
+	.banner form {
+		bottom: 40px;
+		left: 20px;
+	}
+	.logo, .topnav, .s1, .s2, .s3, footer {
+		width: 96%;
+		margin-left: 2%;
+	}
+	.wrap_item .item, .s2_item {
+		width: 45vw;
+		height: 29vw;
+		min-width: 100px;
+		min-height: 65px;
+	}
+	.item_text p {
+		width: 45vw;
+	}
+	.wrap_item:nth-child(n+5) {
+		display: none;
+	}
+	.s2_item {
+		width: 100%;
+		height: auto;
+	}
+	.s2_header:before {
+		top: 0px;
+	}
+	.s2_header:after {
+		bottom: -1px;
+	}
+	.search_form {
+		width: 45vw;
+	}
+	.search {
+		width: 85%;
+	}
+	.s2_list {
+		justify-content: space-around;
+	}
+	.s2 > .s2_item:nth-child(2) {
+		order: -1;
+	}
+	.s2 > .s2_item:nth-child(3) {
+		display: none;
+	}
+	.s3 {
+		margin-top: 50px;
+	}
+	.item_bottom {
+		width: 44vw;
+		justify-content: space-between;
+	}
+	footer > .s2_item:nth-child(-n+2) {
+		display: none;
+	}
+}
+@media (max-width: 480px) {
+	body, .search_form, .wrap_item, .wrap_item .item, 
+	.s2_item, .s2_header:before, .s2_header:after, 
+	.search_form, .item_text p, .item_bottom {
+		width: 100%
+	}
+	.wrapper {
+		margin-top: 5px;
+	}
+	.banner {
+		height: 300px;
+		border-radius: 0;
+	}
+	.banner .text1 {
+		font:  2em segoe print, sans-serif;
+	}
+	.banner .text2 {
+		font: 1em verdana, sans-serif;
+	}
+	.banner form {
+		bottom: 40px;
+		left: 20px;
+	}
+	.logo, .topnav, .s1, .s2, .s3, footer {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.wrap_item:nth-child(n+4) {
+		display: none;
+	}
+	.wrap_item .item {
+		height: 50vw;
+	}
+	.s2 {
+		flex-wrap: wrap-reverse;
+	}
+	.s2_item {
+		height: auto;
+	}
+	.s2_header:before {
+		top: 0px;
+	}
+	.s2_header:after {
+		bottom: -1px;
+	}
+	.s2_header_search div img {
+		display: block;
+	}
+	.s2 > .s2_item:nth-child(3) {
+		display: none;
+	}
+	.search{
+		width: 85%;
+	}
+	.s3 {
+		margin-top: 50px;
+	}
+	footer > .s2_item:nth-child(-n+2) {
+		display: none;
+	}
+	.topnav {
+	display: block;
+	}
+	.topnav li a:hover:after {
+	display: none;
+	}
+	.social {
+	}
+
+
+
+	.topnav label.togglemenu {
+		display: block;
+
+	}
+	.topnav ul{
+		background: #000;
+		display: none;
+		width: 86vw;
+
+	}
+	.topnav ul li a {
+		padding: 10px 0 10px 15px;
+		color: #fff;
+
+
+	}
+
+/*Отбираем кнопку при щелчке, и применяем к ней действия,
+ меняем цвет кнопки и шрифта:*/
+	input.togglemenu:checked + label.togglemenu{
+		background: #000;
+		color: #fff;
+	}
+
+/*Далее прописываем отображение основного списка меню. 
+Отбираем щелчек по кнопке, и при помощи данной 
+конструкции описываем к чему его применить.*/
+	input.togglemenu:checked ~ ul {
+		display: block;
+		z-index: 1;
+	transition: all 1s ease;
+
+	}
+	input.togglemenu:checked ~ label.togglemenu {
+		width: 100%;
+	}
+}
