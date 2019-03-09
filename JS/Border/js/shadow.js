@@ -20,7 +20,7 @@ for (i = 0; i < range.length; i++) {
 range[i].addEventListener('mousemove', function() {
     let styleValue = getInset() + horShadow.value + 'px ' + vertShadow.value + 'px ' + blurShadow.value + 'px ' + spreadShadow.value + 'px ' + 'black';
     block.style.boxShadow = styleValue;
-    codeOut.innerHTML = 'Box-shadow: ' + styleValue + ';';
+    codeOut.innerHTML = 'box-shadow: ' + styleValue + ';';
     
     horShadowN.value = horShadow.value;
     vertShadowN.value = vertShadow.value;
@@ -46,7 +46,7 @@ let insetCh = document.querySelector('.ins');
 insetCh.addEventListener ('change', function () {
     let styleValue = getInset() + horShadowN.value + 'px ' + vertShadowN.value + 'px ' + blurShadowN.value + 'px ' + spreadShadowN.value + 'px ' + 'black';
     block.style.boxShadow = styleValue;
-    codeOut.innerHTML = 'Box-shadow: ' + styleValue + ';';
+    codeOut.innerHTML = 'box-shadow: ' + styleValue + ';';
 })
 
 function getInset() {
