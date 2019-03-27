@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+        <script src="js/main.js" defer></script>
     <title>Smart Watch</title>
 </head>
 <body>
@@ -75,7 +77,7 @@
                         <h3 class="item-h3 bold p48">tag heuer</h3>
                         <h4 class="item-h4 regular p18">Connected Modular</h4>
                     </div>
-                    <img src="img/clock7.jpg" alt="Clock">
+                    <img src="img/clock7.jpg" alt="Clock" class="image">
                 </div>
                 <div class="item">
                     <div class="item-header">
@@ -133,6 +135,91 @@
                     </div>  
                     <img src="img/clock1.jpg" alt="Clock">
                 </div>
+            </div>
+        </section>
+
+        <section class="s4">
+            <div class="wrap-cont">
+                <div class="fast-order">
+                    <p class="ultra p72">заказ</p>
+                    <p class="light p24">Быстрое оформление</p>
+                </div>
+                <div class="order">
+                    <div class="order-phone">
+                        <p class="ultra p36">Сообщите оператору <br> что хотите купить, а мы <br> оформим доставку за Вас.</p>
+                        <input type="text" placeholder="Введите номер телефона" class="phone"> <br>
+                        <button class="btn ultra p24">заказать звонок</button>
+                    </div>
+                    <div class="order-form">
+                        <p class="ultra p36">Или</p>
+                        <form action="#">
+                            <div class="select-form">
+                                <select name="Watches" id="s-wathes">
+                                    <option>Выберите товар(ы)</option>
+                                    <option value="Connected Modular">Connected Modular</option>
+                                    <option value="Carrera">Carrera</option>
+                                    <option value="Inspiration Element">Inspiration Element</option>
+                                    <option value="Master Chronometer">Master Chronometer</option>
+                                    <option value="Patrimony">Patrimony</option>
+                                    <option value="Traditionelle">Traditionelle</option>
+                                    <option value="RG B-100">RG B-100</option>
+                                    <option value="GW-3000M">GW-3000M</option>
+                                    <option value="GG 1000">GG 1000</option>
+                                </select> 
+                                <i class="fas fa-angle-down"></i>
+                            </div><br>
+                            <input type="text" placeholder="Введите имя и фамилию" class="phone"> <br>
+                            <div class="select-form">
+                                <select name="shippingMethod" id="s-wathes">
+                                    <option>Выберите способ доставки</option>
+                                    <option value="Connected Modular">Курьер</option>
+                                    <option value="Carrera">Самовывоз</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </div> <br>
+                            <input type="text" placeholder="Введите адрес доставки" class="phone"> <br>
+                            <button class="btn ultra p24">оформить заказ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="news-container">
+                    <div class="news-header">
+                        <p class="ultra p72 blue">Новости </p>
+                        <p class="light p24 red">нашего салона</p> 
+                    </div>
+                    <div class="news-all">
+                        <div class="news-item">
+                            <div class="news-date">
+                                <p class="bold p24 blue">фев</p>
+                                <p class="bold p42 blue">02</p>
+                            </div>
+                            <p class="bold p18 red">Какие часы выбрать для женщины, чтобы она осталась довольна?</p>
+                            <p class="regular p14">Впринципе задача оченьпростая. Но множество начинающих допускают элементарные ошибки, которые огорчают всю прилюдию. Итак приступим... Во-первых. Часы должны вписываться по стилистике. Иначе говорят если женщина предпочитает спортивный стиль, то зачем ей классика?... <span class="red">Читать дальше &rarr;</span></p>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">
+                                <p class="bold p24 blue">янв</p>
+                                <p class="bold p42 blue">28</p>
+                            </div>
+                            <p class="bold p18 red">Лучшие фитнес браслеты в своём сегменте.</p>
+                            <p class="regular p14">Ценовой разброс таких девайсов неоправданно значительный. Почему неоправдано? Да потому, что функции у них одни и те же. И по критерию полезности, никто из них не превосходит другие. Мы как обычно проанализировали рынок и выбрали то, что является наиболее... <span class="red">Читать дальше &rarr;</span></p>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">
+                                <p class="bold p24 blue">янв</p>
+                                <p class="bold p42 blue">15</p>
+                            </div>
+                            <p class="bold p18 red">Новое пополнение и отдельная коллекция.</p>
+                            <p class="regular p14">В начале нового года мы мониторили рынок как ненормальные. Тестировали те или иные модели, разговаривали с производителями, пользователями. И решили расширить ассортимент. Мы добавили действительно яркие, бомбические девайсы. Новая коллекция по ссылке...  <span class="red">Читать дальше &rarr;</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s5">
+            <div class="wrap-cont">
+            
             </div>
         </section>
     </div>
