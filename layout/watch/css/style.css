@@ -67,15 +67,23 @@ h2 {
     font-weight: bold;
     transform: scaleY(1.1);
 }
-.p14 {font-size: 14px;}
-.p18 {font-size: 18px;}
-.p24 {font-size: 24px;}
-.p36 {font-size: 36px;}
-.p42 {font-size: 42px;}
-.p48 {font-size: 48px;}
-.p72 {font-size: 72px;}
-.blue {color: #009FE3;}
-.red {color: #FF6138;}
+.medium {
+    font-family: 'Neo Sans Pro';
+	font-weight: 500;
+    font-style: normal;
+    transform: scaleY(1.1);
+}
+.p14 {font-size: 14px}
+.p16 {font-size: 16px}
+.p18 {font-size: 18px}
+.p24 {font-size: 24px}
+.p36 {font-size: 36px}
+.p42 {font-size: 42px}
+.p48 {font-size: 48px}
+.p72 {font-size: 72px}
+.blue {color: #009FE3}
+.red {color: #FF6138}
+.white {color: #fff}
 .phone {
     width: 230px;
     height: 40px;
@@ -249,6 +257,8 @@ h2 {
     width: 100%;
     position: relative;
     top: 50px;
+    border: 1px solid red;
+
 }
 .order-form {
     width: 310px;
@@ -295,7 +305,8 @@ form {
     font-size: 16px;
     padding-left: 5px;
 }
-:focus::-webkit-input-placeholder {
+:focus::-webkit-input-placeholder,
+:focus::-moz-input-placeholder {
     color: transparent;
 }
 .fa-angle-down {
@@ -342,4 +353,88 @@ form {
     margin-top: 150px;
     position: relative;
     background: url(../img/bg-img2.jpg) no-repeat;
+}
+.buyers-header {
+    padding-top: 100px;
+}
+.buyers-header > p:first-child {
+    text-transform: uppercase;
+}
+.buyers {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    margin-top: 145px;
+}
+.buyers-profile {
+    position: relative;
+    height: 380px;
+    margin-top: 35px;
+}
+.buyers-profile, .buyers-feedback {
+    width: 45%;
+}
+.buyers-feedback > blockquote {
+    line-height: 1.5;
+    position: relative;
+    margin-top: 150px;
+}
+.buyers-feedback > blockquote:first-letter {
+    margin-left: 70px;
+}
+.buyers-feedback > blockquote:before {
+    content: '\201D';
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: red;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+}
+.buyers-feedback > blockquote:after {
+    content: '\201D';
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: red;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+.buyer {
+    position: absolute;
+}
+.buyer > img {
+    float: left;
+    transition: .5s ease;
+}
+.buyer > img:hover {
+    transform: scale(1.5);
+}
+.buyer > p {
+    width: 290px;
+    padding-top: 25px;
+    text-align: right;
+}
+.buyers-profile > .one {
+    left: 60px;
+}
+.buyers-profile > .two {
+    top: 145px;
+    left: 0px;
+}
+.buyers-profile .two > p {
+    top: 145px;
+    left: 20px;
+    width: 245px;
+}
+.buyers-profile > .three {
+    bottom: 0;
+    left: 60px;
+}
+.feedback {
+    margin-top: 100px;
+    background: none;
+    border: 2px solid #FF6138;
 }
