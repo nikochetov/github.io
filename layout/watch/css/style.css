@@ -582,3 +582,28 @@ footer {
     left: 60px;
     top: 0;
 }
+.social-faq {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.social__img {
+    margin-top: 25px;
+}
+.social__img > img {
+    margin-right: 7px;
+}
+.faq > p, .benefit > p {
+    margin-bottom: 25px;
+}
+.benefit > p {
+    text-align: right;
+}
+.faq > a, .benefit > a {
+    display: block;
+    text-decoration: none;
+    margin-top: 12px;
+}
+.benefit .totop {
+    margin-top: 30px;
+}
