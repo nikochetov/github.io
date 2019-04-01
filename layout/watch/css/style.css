@@ -226,10 +226,35 @@ h2 {
     width: 295px;
     margin-top: 40px;
     transition: .5s ease;
-
 }
 .item > img:hover {
     opacity: .5;
+}
+.item .item-price {
+    width: 155px;
+    height: 40px;
+    border: 2px solid #009FE3;
+    border-radius: 20px;
+    box-shadow: 0 0 20px -5px black;
+    display: none;
+    position: absolute;
+    padding-top: 5px;
+    box-sizing: border-box;
+    left: 70px;
+    bottom: 40px;
+}
+.item > img:hover + .item-price {
+    display: block;
+}
+.item .item-spec {
+    width: 155px;
+    height: 30px;
+    background: #009FE3;
+    border-radius: 15px;
+    box-shadow: 0 0 30px -5px black;
+    padding-top: 5px;
+    box-sizing: border-box;
+    position: absolute;
 }
 
 
@@ -333,9 +358,7 @@ form {
 }
 .news-item > p {
     line-height: 1.5;
-}
-.news-item > p:nth-child(3) {
-    padding-top: 20px;
+    height: 100px;
 }
 .news-item p > span {
     cursor: pointer;
@@ -520,7 +543,7 @@ form {
 }
 .subscribe__form > .btn {
     background: #009FE3;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* FOOTER */
@@ -592,6 +615,7 @@ footer {
 }
 .social__img > img {
     margin-right: 7px;
+    cursor: pointer;
 }
 .faq > p, .benefit > p {
     margin-bottom: 25px;
@@ -604,6 +628,27 @@ footer {
     text-decoration: none;
     margin-top: 12px;
 }
+.benefit .block-totop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+}
 .benefit .totop {
-    margin-top: 30px;
+    padding-right: 20px;
+}
+.benefit .btn-totop {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+.benefit .btn-totop .fa-angle-up {
+    font-size: 25px;
+    position: absolute;
+    left: 8px;
+    top: 2px;
 }
