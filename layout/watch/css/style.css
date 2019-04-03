@@ -252,11 +252,54 @@ h2 {
     background: #009FE3;
     border-radius: 15px;
     box-shadow: 0 0 30px -5px black;
-    padding-top: 5px;
+    padding-top: 7px;
     box-sizing: border-box;
     position: absolute;
+    display: none;
 }
-
+.item .spec1 {
+    top: 150px;  
+    left: -30px;  
+}
+.item .spec2 {
+    top: 150px;  
+    right: -30px;  
+}
+.item .spec3 {
+    top: 260px;  
+    right: -60px;  
+}.item .spec4 {
+    top: 260px;  
+    left: -60px;  
+}.item .spec5 {
+    top: 380px;  
+    left: -30px;  
+}.item .spec6 {
+    top: 380px;  
+    right: -30px;  
+}
+.item > img:hover ~ .item-spec {
+    display: block;
+}
+.numbers {
+    max-width: 330px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.numbers a {
+    text-decoration: none;
+}
+.numbers .fas {
+    cursor: pointer;
+}
+.numbers .num a {
+    padding-bottom: 10px;
+}
+.numbers .num .active {
+    text-decoration: underline;
+}
 
 /* SECTION 4 */
 
