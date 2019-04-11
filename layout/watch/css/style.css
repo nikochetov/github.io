@@ -236,15 +236,16 @@ h2 {
     border: 2px solid #009FE3;
     border-radius: 20px;
     box-shadow: 0 0 20px -5px black;
-    display: none;
+    opacity: 0;
     position: absolute;
     padding-top: 5px;
     box-sizing: border-box;
     left: 70px;
     bottom: 40px;
+    transition: 1s ease;
 }
 .item > img:hover + .item-price {
-    display: block;
+    opacity: 1;
 }
 .item .item-spec {
     width: 155px;
@@ -255,7 +256,8 @@ h2 {
     padding-top: 7px;
     box-sizing: border-box;
     position: absolute;
-    display: none;
+    opacity: 0;
+    transition: .5s ease-out;
 }
 .item .spec1 {
     top: 150px;  
@@ -279,7 +281,7 @@ h2 {
     right: -30px;  
 }
 .item > img:hover ~ .item-spec {
-    display: block;
+    opacity: 1;
 }
 .numbers {
     max-width: 330px;
